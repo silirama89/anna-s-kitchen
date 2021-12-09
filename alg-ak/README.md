@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# [Anna's Kitchen]()
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## App Description
 
-## Available Scripts
+_Anna's Kitchen_ is a **business website** for a baker from Pasadena, CA.
+The site will display pictures of Anna's previous work and reviews from her clients as the "Home" page. Anna's Kitchen's staples will be featured in the "Our Products" page, both sweet and savory options, including brief descriptions of them.
+On the "About Anna" section of the site, Anna's future clients will get to learn a bit more about her, and her plans for the Kitchen. Finally, in the "Contact" section, visitors will find all of Anna's Kitchen's contact information, and a form to join her mailing list.
 
-In the project directory, you can run:
+## Wireframes
 
-### `npm start`
+- #### Mobile View
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![alt text](src/images/wireframes/ak-mobile-home.png "Mobile View - Home")
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![alt text](src/images/wireframes/ak-mobile-products-sweet.png "Mobile View - Products - Sweet")
 
-### `npm test`
+![alt text](src/images/wireframes/ak-mobile-products-savory.png "Mobile View - Products - Savory")
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![alt text](src/images/wireframes/ak-mobile-about.png "Mobile View - About Anna")
 
-### `npm run build`
+![alt text](src/images/wireframes/ak-mobile-contact.png "Mobile View - Contact")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- #### Desktop View
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![alt text](src/images/wireframes/ak-desktop-home.png "Desktop View - Home")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Components Hierarchy
 
-### `npm run eject`
+![alt text](src/images/ak-component-hierarchy.png "Components Flowchart")
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## API
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Name**: Anna's Kitchen.
+- **URL**: <https://api.airtable.com/appxfcqMlzJLg81EN>
+- **Information to be accessed**:
+  - Client List Table
+  - Sweet Table
+  - Savory Table
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## API Snippet
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Minimum Viable Product (MVP)
 
-## Learn More
+- A working, interactive React app.
+- Utilize React Router for the main four rendered components: "Home" (/home), "Our Products" (/products), "About Anna" (/about) and "Contact" (/contact); and their respectives sub-components.
+- A Header and Footer components.
+- GET/render the products from the Sweet and Savory tables from an Airtable base using Axios.
+- POST/create a new entry on the Client List table from an Airtable base usin Axios.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Post-MVP
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Turning the gallery at the "Home" page and interactive one, with embedded Instagran pictures.
+- An "Online Orders" section connected to an Airtable table.
+- Hovering over the footer icons will display the linked information.
+- A "Contact" form that includes a section to upload pictures for reference.
 
-### Code Splitting
+## Goals
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| **Date** | **Goals**                                                                                                                         |
+| :------: | --------------------------------------------------------------------------------------------------------------------------------- |
+|   12/3   | Create HTML _boilerplate_, _component files_ and _Axios_ function.                                                                |
+|   12/4   | Meet with client to _create tables_ and to define _CSS properties' values_ (colors, fonts, positioning). Create CSS _stylesheet_. |
+|   12/5   | Finalize _About_, _Footer_ and _Header_ components, including the _stylesheet_.                                                   |
+|   12/6   | Finalize _Home_, _Products_ and _Contact_ components, including the _stylesheet_.                                                 |
+|   12/7   | _Test_ and _debug_ MVP features.                                                                                                  |
+|   12/8   | Implement _Post-MVP_ features.                                                                                                    |
 
-### Analyzing the Bundle Size
+## Timeframes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| **Task**                                                   | **Estimated time** | **Invested time** |
+| ---------------------------------------------------------- | -----------------: | ----------------: |
+| Choose colorscheme and fonts                               |            3.0 hrs |           0.0 hrs |
+| Create _component files_                                   |            1.5 hrs |           0.0 hrs |
+| Create and configure _tables_                              |            3.0 hrs |           0.0 hrs |
+| Set _axios_                                                |            4.0 hrs |           0.0 hrs |
+| Create CSS _stylesheet_ for mobile                         |            3.0 hrs |           0.0 hrs |
+| Configure _Header_, _Footer_ and _About_ components        |            4.0 hrs |           0.0 hrs |
+| Configure _Home_, _Products_ and _Contacts_ components     |            4.0 hrs |           0.0 hrs |
+| Create CSS _media query_ for desktop                       |            3.0 hrs |           0.0 hrs |
+| _Clean up_ code y comments                                 |            3.0 hrs |           0.0 hrs |
+| Finalize CSS _stylesheet_                                  |            3.0 hrs |           0.0 hrs |
+| _Test_ and _debug_                                         |            3.0 hrs |           0.0 hrs |
+| Create _functions_ for _post-MVP_ features                 |            3.0 hrs |               N/A |
+| Create CSS _stylesheet_ parameters for _post-MVP_ features |            3.0 hrs |               N/A |
+| Project Total Hours                                        |           40.5 hrs |           0.0 hrs |
 
-### Making a Progressive Web App
+## SWOT Analysis
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![alt text](images/random-writing-matrix.png "Priority Matrix")
