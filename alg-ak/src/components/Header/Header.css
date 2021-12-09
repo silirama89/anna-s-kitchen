@@ -1,0 +1,13 @@
+#header {
+  background-image: url("./ak-banner@3x.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  background-color: #996a32;
+  width: 200;
+  height: 200;
+  border: 0;
+}
