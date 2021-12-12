@@ -10,6 +10,7 @@ import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 
 function App() {
+  
   const [menu, setMenu] = useState([])
   
   useEffect(() => {
@@ -20,8 +21,6 @@ function App() {
     getMenu()
   }, [])
 
-  
-  
   return (
     <div className="App">
       <Header />
