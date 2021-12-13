@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import { NavLink, Link,  Routes, Route } from 'react-router-dom'
+import { NavLink, Routes, Route } from 'react-router-dom'
 import { grabMenu } from "./services"
 import Home from "./components/Home/Home"
 import Menu from "./components/Menu/Menu"
