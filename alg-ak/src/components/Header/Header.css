@@ -1,13 +1,59 @@
-#header {
-  background-image: url("./ak-banner@3x.jpg");
-  background-position: center;
-  background-size: 100%;
+.header {
+  background-image: url("https://res.cloudinary.com/silirama89/image/upload/v1639271574/alg-ak/ak-banner_3x_r8dujp.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
+  padding: 15px;
+  text-align: center;
+}
+
+.logo-box {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  background-color: rgba(153, 106, 50, 0.65);
+  width: auto;
+  position: center;
+  padding: 5px;
 }
 
 .logo {
-  background-color: #996a32;
-  width: 200;
-  height: 200;
-  border: 0;
+  width: 125px;
+  height: 125px;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Audrey Normal";
+  src: url("./Audrey-Normal.otf");
+}
+
+h5.phrase {
+  font-family: "Great Vibes", cursive;
+  font-size: 12px;
+  font-style: bold;
+  color: #f2efe7;
+  margin: 0 35px;
+  padding: 0;
+}
+
+h6.phrase {
+  font-family: "Audrey Normal";
+  font-size: 10px;
+  color: #f2efe7;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 376px) {
+  .logo {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  h5.phrase {
+    font-size: 14px;
+  }
+
+  h6.phrase {
+    font-size: 12px;
+  }
 }

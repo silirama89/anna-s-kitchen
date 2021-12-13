@@ -1,0 +1,125 @@
+h3.title {
+  text-align: center;
+  font-family: abril-fatface, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: rgb(48, 58, 55);
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+div.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 5px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  box-sizing: content-box;
+  border: solid #5b6dcd 0;
+  padding: 10px 10px 10px 10px;
+  box-shadow: rgba(48, 58, 55, 0.3) 0px 1px 2px 0px,
+    rgba(48, 58, 55, 0.15) 0px 1px 3px 1px;
+  background-color: rgba(153, 106, 50, 0.4);
+  margin: 15px;
+  width: content;
+}
+
+.pic1 {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100px;
+  height: 100px;
+  align-self: center;
+}
+.pic2 {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100px;
+  height: 100px;
+}
+.pic3 {
+  grid-column: 3;
+  grid-row: 1;
+  width: 100px;
+  height: 100px;
+}
+.pic4 {
+  grid-column: 1;
+  grid-row: 2;
+  width: 100px;
+  height: 100px;
+}
+.pic5 {
+  grid-column: 2;
+  grid-row: 2;
+  width: 100px;
+  height: 100px;
+}
+.pic6 {
+  grid-column: 3;
+  grid-row: 2;
+  width: 100px;
+  height: 100px;
+}
+.pic7 {
+  grid-column: 1;
+  grid-row: 3;
+  width: 100px;
+  height: 100px;
+}
+.pic8 {
+  grid-column: 2;
+  grid-row: 3;
+  width: 100px;
+  height: 100px;
+}
+.pic9 {
+  grid-column: 3;
+  grid-row: 3;
+  width: 100px;
+  height: 100px;
+}
+.pic10 {
+  grid-column: 1;
+  grid-row: 4;
+  width: 100px;
+  height: 100px;
+}
+.pic11 {
+  grid-column: 2;
+  grid-row: 4;
+  width: 100px;
+  height: 100px;
+}
+.pic12 {
+  grid-column: 3;
+  grid-row: 4;
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 376px) {
+  div.gallery {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: min-content min-content min-content min-content;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin: 25px;
+    max-width: 1200px;
+  }
+  h3.title {
+    font-size: 20px;
+    margin: 30px 0 0 o;
+  }
+  div.gallery > img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+}

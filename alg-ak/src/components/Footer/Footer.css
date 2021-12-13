@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Audrey Normal";
+  src: url("./Audrey-Normal.otf");
+}
+
+.footer {
+  height: 70px;
+  background: #c9ab8f;
+  text-align: center;
+  padding: 5px;
+  font-family: "Audrey Normal";
+  color: #031f3a;
+  margin: 30px 0 0 0;
+}
+
+div.foot-icons {
+  margin: 5px auto;
+}
+
+div.foot-icons > i {
+  margin: 5px;
+  font-size: 30px;
+}
+
+div.web-developer {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div.web-developer > i {
+  display: inline;
+  text-align: left;
+  margin-right: 10px;
+}
+
+p.dev-name {
+  display: inline;
+  font-family: "Audrey Normal";
+}
+
+@media (min-width: 376px) {
+  .footer {
+    height: 100px;
+    margin: 30px 0 0 0;
+  }
+
+  div.foot-icons {
+    margin: 10px auto;
+  }
+
+  div.foot-icons > i {
+    margin: 10px;
+    font-size: 35px;
+  }
+
+  div.web-developer {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  div.web-developer > i {
+    display: inline;
+    text-align: left;
+    margin-right: 1px;
+  }
+
+  p.dev-name {
+    display: inline;
+    font-family: "Audrey Normal";
+    font-size: 16px;
+  }
+}

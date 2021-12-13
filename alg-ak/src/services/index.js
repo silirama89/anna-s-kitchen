@@ -21,12 +21,12 @@ export const grabMenu = async () => {
   return response.data.records
 }
 
-export const grabReviews = async () => {
+export const grabRatings = async () => {
   const response = await axios.get(REVIEWS_URL, config)
   return response.data.records
 }
 
-export const postClients = async (body) => {
+export const postClient = async (body) => {
   const response = await axios.post(CLIENTS_URL, { fields: body }, config)
   return response.data
 }

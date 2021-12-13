@@ -1,0 +1,108 @@
+div.menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: content content content;
+  text-align: center;
+  margin-top: 20px;
+  color: #303a37;
+}
+
+div.dinner-menu {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div.event-menu {
+  grid-column: 1;
+  grid-row: 2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div.other-menu {
+  grid-column: 1;
+  grid-row: 3;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h3.menu {
+  font-family: abril-fatface, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+h4.menu {
+  font-family: "Gwendolyn", cursive;
+  font-size: 20px;
+  font-style: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-family: courier-prime, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.appetizer {
+  text-align: center;
+}
+
+.entree {
+  text-align: center;
+}
+
+.sides {
+  text-align: center;
+}
+
+.dessert {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 376px) {
+  h3.menu {
+    font-family: abril-fatface, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  h4.menu {
+    font-family: "Gwendolyn", cursive;
+    font-size: 24px;
+    font-style: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-family: courier-prime, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    margin: 0 auto;
+    min-width: 50%;
+    max-width: 1000px;
+  }
+
+  .dessert {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

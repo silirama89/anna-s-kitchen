@@ -1,20 +1,17 @@
 .App {
-  text-align: center;
+  background-color: #f2efe7;
+  background-size: 100%;
+  background-position: center;
+  align-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "Audrey Normal";
+  src: url("./Audrey-Normal.otf");
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f2efe7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,8 +21,30 @@
   color: white;
 }
 
+.main {
+  display: inline-block;
+  text-align: center;
+}
+
+nav {
+  height: content;
+  background: #c9ab8f;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Audrey Medium";
+  font-size: 14px;
+  text-align: center;
+  color: #031f3a;
+  border: none;
+  margin: 0;
+  padding: 5px 10px 0 10px;
+}
+
 .App-link {
-  color: #61dafb;
+  color: #031f3a;
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +53,26 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 376px) {
+  main {
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  a {
+    text-decoration: none;
+    font-family: "Audrey Medium";
+    font-size: 18px;
+    text-align: center;
+    color: #031f3a;
+    border: none;
+    margin: 0;
+    padding: 5px 10px 5px 10px;
   }
 }

@@ -1,0 +1,135 @@
+.about {
+  background-color: #f2efe7;
+  width: 100%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: content content content content content content;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+img.anna {
+  grid-column: 1;
+  grid-row: 1;
+  width: 200px;
+  align-self: center;
+  justify-self: center;
+  margin-top: 10px;
+}
+
+@font-face {
+  font-family: "Audrey Normal";
+  src: url("./Audrey-Normal.otf");
+}
+
+h3.anna {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 0;
+  color: #303a37;
+  font-family: "Audrey Normal";
+  font-size: 20px;
+  align-self: center;
+  justify-self: center;
+}
+
+@font-face {
+  font-family: "Audrey Normal Oblique";
+  src: url("./Audrey-NormalOblique.otf");
+}
+
+h4.anna {
+  grid-column: 1;
+  grid-row: 3;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 0;
+  color: #303a37;
+  font-family: "Audrey Normal Oblique";
+  font-size: 14px;
+  align-self: center;
+  justify-self: center;
+}
+
+p.p1 {
+  color: #303a37;
+  font-family: courier-prime, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  text-align: justify;
+  margin: 5px 0px;
+  padding: 0;
+  grid-column: 1;
+  grid-row: 4;
+  align-self: center;
+  justify-self: center;
+}
+
+p.p2 {
+  color: #303a37;
+  font-family: courier-prime, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  text-align: justify;
+  margin: 5px 15px;
+  padding: 0;
+  grid-column: 1;
+  grid-row: 5;
+  align-self: center;
+  justify-self: center;
+}
+
+p.p3 {
+  color: #303a37;
+  font-family: courier-prime, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  text-align: justify;
+  margin: 5px 15px;
+  padding: 0;
+  grid-column: 1;
+  grid-row: 6;
+  align-self: center;
+  justify-self: center;
+}
+
+@media (min-width: 376px) {
+  .about {
+    background-color: #f2efe7;
+    width: 100%;
+  }
+  img.anna {
+    width: 350px;
+  }
+  p.p1 {
+    min-width: 400px;
+    max-width: 1000px;
+    font-size: 14px;
+    margin: 5px 25px;
+    padding: 5px 15px;
+  }
+
+  p.p2 {
+    min-width: 400px;
+    max-width: 1000px;
+    font-size: 14px;
+    margin: 5px 25px;
+    padding: 5px 15px;
+  }
+
+  p.p3 {
+    min-width: 400px;
+    max-width: 1000px;
+    font-size: 14px;
+    margin: 5px 25px;
+    padding: 5px 15px;
+  }
+}

@@ -4,16 +4,26 @@ import Form from './Form.jsx'
 
 function Contact() {
   return (
-    <div>
+    <div className='contact'>
+            
+      <div className='contact-info'>
+        <h3 className='contact'>Contact us:</h3>
+        <div className='info'>
+        <i class="fas fa-phone-alt">     626-236-0305</i>
+        </div>
+        <div className='info'>
+        <i class="fas fa-envelope">     annalouisegoodwin@gmail.com</i>
+        </div>
+        <div className='info'>
+        <i class="fab fa-instagram-square">     @annaskitchen</i>
+        </div>
+        <div className='info'>
+          <i class="fas fa-map-marker-alt">  Pasadena, CA</i>
+        </div>
+      </div>  
+      
       <Form />
       
-      <div className='contact-info'>
-        <h3>CONTACT US:</h3>
-        <img src='' alt='phone-icon'/><p>626-236-0305</p>
-        <img src='' alt='at-icon'/><p>annalouisegoodwin@gmail.com</p>
-        <img src='' alt='ig-icon'/><p>@annaskitchen</p>
-        <img src='' alt='target-icon'/><p>Pasadena, CA</p>
-      </div>  
     </div>
   )
 }

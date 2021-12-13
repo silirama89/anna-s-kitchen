@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import { Link, Routes, Route } from 'react-router-dom'
+import { NavLink, Link,  Routes, Route } from 'react-router-dom'
 import { grabMenu } from "./services"
 import Home from "./components/Home/Home"
 import Menu from "./components/Menu/Menu"
@@ -22,22 +22,23 @@ function App() {
   }, [])
 
   return (
+    
     <div className="App">
       <Header />
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/menu">Our Menu</Link>
-        <Link to="/about">About Anna</Link>
-        <Link to="/contact">Contact</Link>
+        <NavLink to="/">HOME </NavLink>
+        <NavLink to="/menu">OUR MENU</NavLink>
+        <NavLink to="/about">ABOUT ANNA</NavLink>
+        <NavLink to="/contact">CONTACT</NavLink>
       </nav>
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu menu={menu}/>} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
+      <div className='main'>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu menu={menu} />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      </div>
       <Footer />
     </div>
   );
